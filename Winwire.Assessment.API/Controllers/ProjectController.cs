@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Winwire.Assessment.API.Models.Dto;
 using Winwire.Assessment.API.Repository.Interface;
 
@@ -19,7 +20,7 @@ namespace Winwire.Assessment.API.Controllers
         public async Task<IActionResult> GetProjects()
         {
             var result = await _projectDataService.GetProjectsAsync();
-            if (result == null)
+            if (result.Count() == 0)
             {
                 return NotFound();
             }
