@@ -1,0 +1,6 @@
+@Winwire.Assessment.API_HostAddress = http://localhost:5133
+
+GET {{Winwire.Assessment.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
