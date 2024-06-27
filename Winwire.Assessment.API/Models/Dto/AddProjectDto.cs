@@ -1,6 +1,6 @@
 ﻿namespace Winwire.Assessment.API.Models.Dto
 {
-    public class AddProject
+    public class AddProjectDto
     {
         public string ProjectName { get; set; } = string.Empty;
 

@@ -6,7 +6,7 @@ using Winwire.Assessment.API.Repository.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IProjectDataService, ProjectDataService>();
+builder.Services.AddScoped<IProjectDataServiceRepository, ProjectDataServiceRepository>();
 //builder.Services.AddDbContext<AssessmentDbContext>();
 
 builder.Services.AddControllers();
